@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="file.js"></script>
+    <title>Socks</title>
+</head>
+<body>
+    <div class="home-screen">
+        <h1>Welcome to Sock Manager</h1>
+        <button id="add-product-btn">Add New Sock</button>
+    </div>
+    <div class="add-product-screen">
+        <h2>Add Product</h2>
+        <form id="product-form">
+            <label for="product-name">Product Name:</label>
+            <input type="text" id="product-name" name="product-name" value="Sock">
+            <label for="product-description">Product Description:</label>
+            <textarea id="product-description" name="product-description">Comfortable and stylish socks.</textarea>
+            <label for="product-price">Base Price:</label>
+            <input type="number" id="product-price" name="product-price">
+            <button type="button" id="next-btn">Next</button>
+        </form>
+    </div>
+    <div class="add-variants-screen">
+        <h2>Add Variants</h2>
+        <form id="variants-form">
+            <label for="variant-size">Size:</label>
+            <select id="variant-size" name="variant-size">
+                <option value="S">Small</option>
+                <option value="M">Medium</option>
+                <option value="L">Large</option>
+            </select>
+            <label for="variant-color">Color:</label>
+            <select id="variant-color" name="variant-color">
+                <option value="Black">Black</option>
+                <option value="White">White</option>
+                <option value="Grey">Grey</option>
+                <option value="Blue">Blue</option>
+            </select>
+            <label for="variant-material">Material:</label>
+            <select id="variant-material" name="variant-material">
+                <option value="Cotton">Cotton</option>
+                <option value="Wool">Wool</option>
+                <option value="Synthetic">Synthetic</option>
+            </select>
+            <label for="variant-length">Length:</label>
+            <select id="variant-length" name="variant-length">
+                <option value="Ankle">Ankle</option>
+                <option value="Crew">Crew</option>
+                <option value="Knee-high">Knee-high</option>
+            </select>
+            <label for="variant-pattern">Pattern:</label>
+            <select id="variant-pattern" name="variant-pattern">
+                <option value="Solid">Solid</option>
+                <option value="Striped">Striped</option>
+                <option value="Polka dots">Polka dots</option>
+                <option value="Argyle">Argyle</option>
+            </select>
+            <button type="button" id="add-variant-btn">Add Another Variant</button>
+            <button type="button" id="review-btn">Review</button>
+        </form>
+    </div>
+    <div class="review-screen">
+        <h2>Review Product</h2>
+        <div id="product-summary">
+            <!-- Product summary will be dynamically generated -->
+        </div>
+        <button type="button" id="submit-btn">Submit</button>
+        <button type="button" id="edit-btn">Edit</button>
+    </div>
+    
+</body>
+</html>
